@@ -286,10 +286,12 @@ header nav .form i:hover {
 
 .landing .left {
   left: 30px;
+  cursor: pointer;
 }
 
 .landing .right {
   right: 30px;
+  cursor: pointer;
 }
 
 .landing .bullets {
@@ -298,6 +300,7 @@ header nav .form i:hover {
   transform: translateX(-50%);
   bottom: 30px;
   display: flex;
+  cursor: pointer;
 }
 
 .landing .bullets li {
@@ -518,6 +521,7 @@ header nav .form i:hover {
   display: block;
   width: fit-content;
   margin: 30px auto;
+  border: 1px solid var(--main-color);
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.15s;
@@ -747,6 +751,7 @@ header nav .form i:hover {
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 .our-skills .testimonials .bullets li {
@@ -953,6 +958,7 @@ q span{
   background-color: var(--main-color);
   color: white;
   padding: 15px 30px;
+  border: 1px solid var(--main-color);
   text-decoration: none;
   transition: 0.25s;
   font-weight: 600;
@@ -1188,6 +1194,11 @@ q span{
 
 .footer .social-icons i {
   padding: 10px 15px;
+  transition: 0.20;
+}
+
+.footer .social-icons i:hover {
+  color: var(--main-color);
 }
 
 .footer .social-icons a {
