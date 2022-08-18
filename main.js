@@ -30,10 +30,46 @@
   let spans = document.querySelectorAll('.prog span');
 
   // Action
-  window.addEventListener("scroll", () => {
+  window.addEventListener('scroll', () => {
     if(window.scrollY >= skillsSection.offsetTop - 700) {
       spans.forEach((span) => {
         span.style.width = span.dataset.progress;
       });
     }
   })
+
+//! Filter Images
+  // Vars
+  let filterLis = document.querySelectorAll('.portfolio .shuffle li');
+  let imgs = document.querySelectorAll('.portfolio .box');
+  let imgsHolder = document.querySelector('.imgs-container');
+
+  // Event Listeners
+  filterLis.forEach((li) => {
+    li.addEventListener('click', removeActive);
+    li.addEventListener('click', manageImages);
+  });
+
+  // Functions
+  function removeActive() {
+    filterLis.forEach((li) => {
+      li.classList.remove('active');
+      this.classList.add('active');
+    })
+  }
+
+  function manageImages() {
+    // centering the images
+    if(this.dataset.category !== '.all') {
+      imgsHolder.style.cssText = 'justify-content: center; gap: 30px;';
+    } else { // making sure that the all doesn't have gap between the images
+      imgsHolder.style.cssText = 'gap: 0;';
+    }
+    // displaying images
+    imgs.forEach((img) => {
+      img.style.display = 'none';
+    })
+    document.querySelectorAll(this.dataset.category).forEach((el) => {
+      el.style.display = 'flex';
+    });
+  }

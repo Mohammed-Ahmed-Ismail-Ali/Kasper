@@ -446,7 +446,7 @@ header nav .form i:hover {
 
 .portfolio .shuffle li {
   padding: 10px;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .portfolio .shuffle li.active,
