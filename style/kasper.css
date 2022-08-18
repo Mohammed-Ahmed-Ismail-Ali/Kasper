@@ -787,6 +787,7 @@ header nav .form i:hover {
   background-color: var(--main-color);
   height: 100%;
   position: relative;
+  transition: 1.5s;
 }
 
 .our-skills .skills .prog-holder .prog span::before {
