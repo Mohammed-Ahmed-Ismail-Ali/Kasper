@@ -5,7 +5,7 @@
   let started = false; // Function Started ? No
 
   window.addEventListener('scroll', () => {
-    if(window.scrollY >= statsSection.offsetTop) {
+    if(window.scrollY >= statsSection.offsetTop - 640) {
       if(!started) {
         nums.forEach((num) => startCount(num));
       }
