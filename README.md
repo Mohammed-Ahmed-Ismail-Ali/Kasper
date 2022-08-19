@@ -1,6 +1,6 @@
 # Kasper
-Html And CSS Design
-I've got the design from Graphberry 
+Html, CSS & JavaScript Design
+I've got the design from Graphberry
 -----------------------------------------
 Kasper - One Page Creative PSD Template
 FREE TEMPLATE
